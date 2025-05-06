@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Moments - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main-css.css">
+    <link rel="stylesheet" href="css/dashboard-css.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12,2C6.48,2,2,6.48,2,12c0,5.52,4.48,10,10,10s10-4.48,10-10C22,6.48,17.52,2,12,2z M12,18c-3.31,0-6-2.69-6-6 s2.69-6,6-6s6,2.69,6,6S15.31,18,12,18z"/>
+                        <path d="M12,8c-2.21,0-4,1.79-4,4c0,2.21,1.79,4,4,4s4-1.79,4-4C16,9.79,14.21,8,12,8z M12,14c-1.1,0-2-0.9-2-2 c0-1.1,0.9-2,2-2s2,0.9,2,2C14,13.1,13.1,14,12,14z"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Mindful Moments</span>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="dashboard-html.html" class="nav-item active">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+                <a href="sessions-html.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-6h10v2H7zm0-4h10v2H7z"/>
+                    </svg>
+                    <span>Sessions</span>
+                </a>
+                <a href="mood-tracker-html.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
+                    </svg>
+                    <span>Mood Tracker</span>
+                </a>
+                <a href="journal-html.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                    </svg>
+                    <span>Journal</span>
+                </a>
+                <a href="community-html.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    </svg>
+                    <span>Community</span>
+                </a>
+                <a href="emergency-support-html.html" class="nav-item emergency-help">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                    </svg>
+                    <span>Emergency Support</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <a href="settings-html.html" class="settings-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+                    </svg>
+                    <span>Settings</span>
+                </a>
+                <a href="welcome-page.html" class="logout-link" onclick="handleLogout()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/>
+                    </svg>
+                    <span>Log Out</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="mobile-menu-trigger" onclick="toggleMobileMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </div>
+                <div class="page-title">Dashboard</div>
+                <div class="user-menu">
+                    <div class="notifications">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+                        </svg>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="user-profile">
+                        <div class="avatar" id="userAvatar">JS</div>
+                        <span class="user-name" id="userName">Loading...</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M7 10l5 5 5-5z"/>
+                        </svg>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <!-- Greeting & Date Section -->
+                <section class="greeting-section">
+                    <div class="greeting-container">
+                        <h1 class="greeting" id="greeting">Loading...</h1>
+                        <p class="date" id="currentDate">Loading...</p>
+                    </div>
+                    <div class="daily-tip">
+                        <div class="tip-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                            </svg>
+                        </div>
+                        <div class="tip-content">
+                            <div class="tip-label">Daily Mindfulness Tip</div>
+                            <div class="tip-text" id="dailyTip">Loading...</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quick Stats Section -->
+                <section class="stats-section">
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background-color: var(--color-yellow);">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="totalMeditationTime">0h 0m</div>
+                            <div class="stat-label">Total Meditation Time</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background-color: var(--color-orange);">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 4c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1.4c0-2 4-3.1 6-3.1s6 1.1 6 3.1V19z"/>
+                            </svg>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="currentStreak">0 days</div>
+                            <div class="stat-label">Current Streak</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background-color: var(--color-red);">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="journalEntries">0</div>
+                            <div class="stat-label">Journal Entries</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background-color: var(--color-pink);">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="averageMood">0.0</div>
+                            <div class="stat-label">Average Mood Score</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Mood Tracking Summary Section -->
+                <section class="mood-section">
+                    <div class="section-header">
+                        <h2>Recent Mood Patterns</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="mood-chart-container">
+                        <div class="chart-placeholder">
+                            <!-- This would be replaced with an actual chart -->
+                            <div class="mood-summary">
+                                <div class="mood-day">
+                                    <div class="day-label">Mon</div>
+                                    <div class="mood-indicator" style="background-color: #8DCA35; height: 70%;"></div>
+                                </div>
+                                <div class="mood-day">
+                                    <div class="day-label">Tue</div>
+                                    <div class="mood-indicator" style="background-color: #8DCA35; height: 80%;"></div>
+                                </div>
+                                <div class="mood-day">
+                                    <div class="day-label">Wed</div>
+                                    <div class="mood-indicator" style="background-color: #FFD056; height: 60%;"></div>
+                                </div>
+                                <div class="mood-day">
+                                    <div class="day-label">Thu</div>
+                                    <div class="mood-indicator" style="background-color: #8DCA35; height: 75%;"></div>
+                                </div>
+                                <div class="mood-day">
+                                    <div class="day-label">Fri</div>
+                                    <div class="mood-indicator" style="background-color: #8DCA35; height: 85%;"></div>
+                                </div>
+                                <div class="mood-day">
+                                    <div class="day-label">Sat</div>
+                                    <div class="mood-indicator" style="background-color: #FFD056; height: 65%;"></div>
+                                </div>
+                                <div class="mood-day">
+                                    <div class="day-label">Sun</div>
+                                    <div class="mood-indicator" style="background-color: #8DCA35; height: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mood-insights">
+                            <h3>Weekly Insights</h3>
+                            <p>Your mood has been mostly positive this week, with a slight dip on Wednesday.</p>
+                            <p>Meditation sessions on Thursday and Friday corresponded with mood improvements.</p>
+                        </div>
+                    </div>
+                    <div class="mood-check-in">
+                        <h3>How are you feeling today?</h3>
+                        <a href="#" class="btn btn-primary">Check In Now</a>
+                    </div>
+                </section>
+
+                <!-- Recent Mood Entries Section -->
+                <section class="mood-entries-section">
+                    <div class="section-header">
+                        <h2>Recent Mood Entries</h2>
+                        <a href="mood-tracker-html.html" class="view-all">View All</a>
+                    </div>
+                    <div class="mood-entries-container" id="recent-mood-entries">
+                        <!-- Mood entries will be dynamically inserted here -->
+                    </div>
+                </section>
+
+                <!-- Recent Journal Entries Section -->
+                <section class="journal-entries-section">
+                    <div class="section-header">
+                        <h2>Recent Journal Entries</h2>
+                        <a href="journal-html.html" class="view-all">View All</a>
+                    </div>
+                    <div class="journal-entries-container" id="recent-journal-entries">
+                        <!-- Journal entries will be dynamically inserted here -->
+                    </div>
+                </section>
+
+                <!-- Recommended Sessions Section -->
+                <section class="sessions-section">
+                    <div class="section-header">
+                        <h2>Recommended Sessions</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="sessions-grid">
+                        <div class="session-card">
+                            <div class="session-image" style="background-color: var(--color-yellow);">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-6h10v2H7zm0-4h10v2H7z"/>
+                                </svg>
+                            </div>
+                            <div class="session-content">
+                                <div class="session-duration">30 min</div>
+                                <h3 class="session-title">Morning Calm</h3>
+                                <p class="session-description">Start your day with clarity and purpose through this guided morning meditation.</p>
+                                <a href="#" class="btn btn-secondary">Begin Session</a>
+                            </div>
+                        </div>
+                        
+                        <div class="session-card">
+                            <div class="session-image" style="background-color: var(--color-orange);">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/>
+                                </svg>
+                            </div>
+                            <div class="session-content">
+                                <div class="session-duration">45 min</div>
+                                <h3 class="session-title">Anxiety Relief</h3>
+                                <p class="session-description">Release tension and worry with this specialized anxiety-reducing meditation practice.</p>
+                                <a href="#" class="btn btn-secondary">Begin Session</a>
+                            </div>
+                        </div>
+                        
+                        <div class="session-card">
+                            <div class="session-image" style="background-color: var(--color-red);">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm-3-9h3.63L9 15.2V17h6v-2h-3.63L15 10.8V9H9v2z"/>
+                                </svg>
+                            </div>
+                            <div class="session-content">
+                                <div class="session-duration">20 min</div>
+                                <h3 class="session-title">Sleep Well</h3>
+                                <p class="session-description">Prepare your mind and body for restful sleep with this calming bedtime meditation.</p>
+                                <a href="#" class="btn btn-secondary">Begin Session</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recent Meditation Sessions Section -->
+                <section class="sessions-section">
+                    <div class="section-header">
+                        <h2>Recent Meditation Sessions</h2>
+                        <a href="sessions-html.html" class="view-all">View All</a>
+                    </div>
+                    <div class="sessions-grid" id="recent-sessions">
+                        <!-- Meditation sessions will be dynamically inserted here -->
+                    </div>
+                </section>
+
+                <!-- Journal Prompt Section -->
+                <section class="journal-section">
+                    <div class="section-header">
+                        <h2>Today's Journal Prompt</h2>
+                    </div>
+                    <div class="journal-prompt">
+                        <div class="prompt-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                            </svg>
+                        </div>
+                        <div class="prompt-content">
+                            <p class="prompt-text">What are three things you're grateful for today, and why do they bring you joy?</p>
+                            <a href="#" class="btn btn-primary">Write in Journal</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Community Highlights Section -->
+                <section class="community-section">
+                    <div class="section-header">
+                        <h2>Community Highlights</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="community-posts">
+                        <div class="community-post">
+                            <div class="post-avatar">LT</div>
+                            <div class="post-content">
+                                <div class="post-header">
+                                    <div class="post-author">Lily T.</div>
+                                    <div class="post-time">2 hours ago</div>
+                                </div>
+                                <p class="post-text">I've been struggling with work anxiety, but the "Calm in Chaos" session helped me so much. Anyone else try this one?</p>
+                                <div class="post-stats">
+                                    <div class="post-likes">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"/>
+                                        </svg>
+                                        <span>24</span>
+                                    </div>
+                                    <div class="post-comments">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M21.99 4c0-1.1-.89-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"/>
+                                        </svg>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Community Interactions Section -->
+                <section class="community-section">
+                    <div class="section-header">
+                        <h2>Recent Community Interactions</h2>
+                        <a href="community-html.html" class="view-all">View All</a>
+                    </div>
+                    <div class="community-posts" id="community-interactions">
+                        <!-- Community interactions will be dynamically inserted here -->
+                    </div>
+                </section>
+            </div>
+
+            <footer class="main-footer">
+                <div class="copyright">&copy; 2025 Mindful Moments. All rights reserved.</div>
+                <div class="emergency-support">
+                    <a href="#" class="emergency-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                        </svg>
+                        Emergency Support Hotlines
+                    </a>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/dashboard-js.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Authentication will be handled by the real database
+            const user = localStorage.getItem('currentUser');
+            
+            if (!user) {
+                window.location.href = 'login-page.html';
+                return;
+            }
+            
+            try {
+                const userData = JSON.parse(user);
+                
+                // Update user info
+                updateUserInfo(userData);
+                
+                // Load dashboard data
+                loadDashboardData();
+                
+                // Initialize notifications
+                initNotifications();
+                
+            } catch (error) {
+                console.error('Error initializing dashboard:', error);
+                window.location.href = 'login-page.html';
+            }
+        });
+
+        // Update user information
+        function updateUserInfo(userData) {
+            // Update greeting
+            const greeting = document.querySelector('.greeting');
+            if (greeting) {
+                greeting.textContent = `Good ${getTimeOfDay()}, ${userData.name}!`;
+            }
+            
+            // Update user name and avatar
+            const userName = document.querySelector('.user-name');
+            const userAvatar = document.querySelector('#userAvatar');
+            if (userName) {
+                userName.textContent = userData.name;
+            }
+            if (userAvatar && userData.name) {
+                userAvatar.textContent = userData.name.split(' ').map(n => n.charAt(0)).join('');
+            }
+
+            // Update current date
+            const currentDate = document.querySelector('#currentDate');
+            if (currentDate) {
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                currentDate.textContent = new Date().toLocaleDateString('en-US', options);
+            }
+        }
+
+        // Load dashboard data
+        function loadDashboardData() {
+            // Load mood entries
+            const moodEntries = JSON.parse(localStorage.getItem('moodEntries') || '[]');
+            updateMoodChart(moodEntries);
+            updateMoodStats(moodEntries);
+
+            // Load meditation sessions
+            const sessions = JSON.parse(localStorage.getItem('meditationSessions') || '[]');
+            updateMeditationStats(sessions);
+
+            // Load journal entries
+            const journalEntries = JSON.parse(localStorage.getItem('journalEntries') || '[]');
+            updateJournalSection(journalEntries);
+
+            // Load daily tip
+            updateDailyTip();
+        }
+
+        // Update mood chart
+        function updateMoodChart(entries) {
+            const recentEntries = entries.slice(-7); // Get last 7 days
+            const moodSummary = document.querySelector('.mood-summary');
+            if (!moodSummary) return;
+
+            const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            const today = new Date().getDay();
+            
+            const lastWeekDays = Array.from({length: 7}, (_, i) => {
+                const dayIndex = (today - 6 + i + 7) % 7;
+                return days[dayIndex];
+            });
+
+            moodSummary.innerHTML = lastWeekDays.map((day, index) => {
+                const entry = recentEntries[index] || { mood: 'none' };
+                const height = entry.mood === 'none' ? '0%' : '70%';
+                const color = getMoodColor(entry.mood);
+                
+                return `
+                    <div class="mood-day">
+                        <div class="day-label">${day}</div>
+                        <div class="mood-indicator" style="background-color: ${color}; height: ${height};"></div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Update mood statistics
+        function updateMoodStats(entries) {
+            const averageMood = document.getElementById('averageMood');
+            if (averageMood && entries.length > 0) {
+                const moodScores = entries.map(entry => getMoodScore(entry.mood));
+                const average = moodScores.reduce((a, b) => a + b, 0) / moodScores.length;
+                averageMood.textContent = average.toFixed(1);
+            }
+        }
+
+        // Update meditation statistics
+        function updateMeditationStats(sessions) {
+            const totalTime = document.getElementById('totalMeditationTime');
+            const currentStreak = document.getElementById('currentStreak');
+            
+            if (totalTime) {
+                const minutes = sessions.reduce((total, session) => total + (session.duration || 0), 0);
+                const hours = Math.floor(minutes / 60);
+                const remainingMinutes = minutes % 60;
+                totalTime.textContent = `${hours}h ${remainingMinutes}m`;
+            }
+
+            if (currentStreak) {
+                const streak = calculateStreak(sessions);
+                currentStreak.textContent = `${streak} days`;
+            }
+        }
+
+        // Update journal section
+        function updateJournalSection(entries) {
+            const journalCount = document.getElementById('journalEntries');
+            if (journalCount) {
+                journalCount.textContent = entries.length;
+            }
+
+            const recentEntries = document.getElementById('recent-journal-entries');
+            if (recentEntries) {
+                const latestEntries = entries.slice(-3).reverse();
+                recentEntries.innerHTML = latestEntries.length > 0 ? 
+                    latestEntries.map(entry => `
+                        <div class="journal-entry-card">
+                            <div class="entry-date">${new Date(entry.date).toLocaleDateString()}</div>
+                            <p class="entry-preview">${entry.content.substring(0, 100)}...</p>
+                        </div>
+                    `).join('') :
+                    '<p>No journal entries yet. Start writing today!</p>';
+            }
+        }
+
+        // Helper functions
+        function getTimeOfDay() {
+            const hour = new Date().getHours();
+            if (hour < 12) return 'morning';
+            if (hour < 18) return 'afternoon';
+            return 'evening';
+        }
+
+        function getMoodColor(mood) {
+            const colors = {
+                'happy': '#8DCA35',
+                'sad': '#5B9BD5',
+                'anxious': '#FFD056',
+                'calm': '#9F7BD5',
+                'energetic': '#F06292',
+                'tired': '#78909C',
+                'none': '#eee'
+            };
+            return colors[mood] || colors.none;
+        }
+
+        function getMoodScore(mood) {
+            const scores = {
+                'happy': 5,
+                'calm': 4,
+                'energetic': 4,
+                'tired': 3,
+                'anxious': 2,
+                'sad': 1
+            };
+            return scores[mood] || 3;
+        }
+
+        function calculateStreak(sessions) {
+            if (!sessions.length) return 0;
+            
+            const today = new Date().setHours(0, 0, 0, 0);
+            let streak = 0;
+            let currentDate = today;
+            
+            for (let i = sessions.length - 1; i >= 0; i--) {
+                const sessionDate = new Date(sessions[i].date).setHours(0, 0, 0, 0);
+                if (sessionDate === currentDate) {
+                    if (streak === 0) streak = 1;
+                    currentDate -= 86400000; // Subtract one day in milliseconds
+                } else if (sessionDate === currentDate - 86400000) {
+                    streak++;
+                    currentDate = sessionDate;
+                } else {
+                    break;
+                }
+            }
+            
+            return streak;
+        }
+
+        function updateDailyTip() {
+            const tips = [
+                "Take a moment to breathe deeply and center yourself.",
+                "Practice gratitude by noting three things you're thankful for.",
+                "Remember to stay hydrated throughout the day.",
+                "Take short breaks to stretch and move your body.",
+                "Notice the small moments of joy in your day."
+            ];
+            
+            const dailyTip = document.getElementById('dailyTip');
+            if (dailyTip) {
+                const tipIndex = new Date().getDate() % tips.length;
+                dailyTip.textContent = tips[tipIndex];
+            }
+        }
+
+        function initNotifications() {
+            const notificationBadge = document.querySelector('.badge');
+            if (notificationBadge) {
+                const notifications = JSON.parse(localStorage.getItem('notifications') || '[]');
+                notificationBadge.textContent = notifications.length;
+                notificationBadge.style.display = notifications.length > 0 ? 'block' : 'none';
+            }
+        }
+
+        function handleLogout() {
+            localStorage.removeItem('currentUser');
+            window.location.href = 'welcome-page.html';
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const sidebar = document.querySelector('.sidebar');
+            if (sidebar) {
+                sidebar.classList.toggle('active');
+            }
+        }
+    </script>
+</body>
+</html>

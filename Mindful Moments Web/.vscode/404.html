@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Mindful Moments</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main-css.css">
+    <style>
+        :root {
+            --color-yellow: #eeaf61;
+            --color-orange: #fb9062;
+            --color-red: #ee5d6c;
+            --color-pink: #ce4993;
+            --color-purple: #6a0d83;
+            --color-text: #333;
+            --color-bg: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        .error-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .error-code {
+            font-size: clamp(80px, 15vw, 120px);
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--color-yellow), var(--color-orange), var(--color-red), var(--color-pink), var(--color-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+
+        .error-message {
+            font-size: clamp(20px, 4vw, 24px);
+            color: var(--color-purple);
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .error-description {
+            color: var(--color-text);
+            margin-bottom: 40px;
+            line-height: 1.6;
+            font-size: clamp(16px, 3vw, 18px);
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--color-purple);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            border: 2px solid var(--color-purple);
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(106, 13, 131, 0.3);
+            background-color: transparent;
+            color: var(--color-purple);
+        }
+
+        .back-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(106, 13, 131, 0.3);
+        }
+
+        @media (max-width: 480px) {
+            .error-container {
+                padding: 15px;
+            }
+            
+            .back-button {
+                padding: 10px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <h1 class="error-message">Page Not Found</h1>
+        <p class="error-description">
+            Oops! The page you're looking for seems to have wandered off on its own mindfulness journey. 
+            Let's help you find your way back to a more peaceful place.
+        </p>
+        <a href="/" class="back-button">Return to Home</a>
+    </div>
+</body>
+</html> 

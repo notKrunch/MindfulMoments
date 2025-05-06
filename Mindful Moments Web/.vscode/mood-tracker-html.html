@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Moments - Mood Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main-css.css">
+    <link rel="stylesheet" href="css/mood-tracker-css.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12,2C6.48,2,2,6.48,2,12c0,5.52,4.48,10,10,10s10-4.48,10-10C22,6.48,17.52,2,12,2z M12,18c-3.31,0-6-2.69-6-6 s2.69-6,6-6s6,2.69,6,6S15.31,18,12,18z"/>
+                        <path d="M12,8c-2.21,0-4,1.79-4,4c0,2.21,1.79,4,4,4s4-1.79,4-4C16,9.79,14.21,8,12,8z M12,14c-1.1,0-2-0.9-2-2 c0-1.1,0.9-2,2-2s2,0.9,2,2C14,13.1,13.1,14,12,14z"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Mindful Moments</span>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="dashboard-html.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-5-6h10v2H7zm0-4h10v2H7z"/>
+                    </svg>
+                    <span>Sessions</span>
+                </a>
+                <a href="mood-tracker-html.html" class="nav-item active">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
+                    </svg>
+                    <span>Mood Tracker</span>
+                </a>
+                <a href="journal-html.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                    </svg>
+                    <span>Journal</span>
+                </a>
+                <a href="community-html.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    </svg>
+                    <span>Community</span>
+                </a>
+                <a href="#" class="nav-item emergency-help">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                    </svg>
+                    <span>Emergency Support</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <a href="#" class="settings-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+                    </svg>
+                    <span>Settings</span>
+                </a>
+                <a href="welcome-page.html" class="logout-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/>
+                    </svg>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="mobile-menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </div>
+                <div class="page-title">Mood Tracker</div>
+                <div class="user-menu">
+                    <div class="notifications">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+                        </svg>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="user-profile">
+                        <div class="avatar">JS</div>
+                        <span class="user-name">John Smith</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M7 10l5 5 5-5z"/>
+                        </svg>
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-content mood-tracker-content">
+                <div class="page-header">
+                    <h1>How are you feeling today?</h1>
+                    <p class="date-display">Thursday, April 24, 2025</p>
+                </div>
+
+                <!-- Current Mood Entry Section -->
+                <section class="mood-entry-section">
+                    <div class="card">
+                        <h2>Track Your Mood</h2>
+                        <p class="section-desc">Use the sliders below to record how you're feeling right now.</p>
+                        
+                        <div class="mood-sliders">
+                            <div class="mood-slider-item">
+                                <div class="mood-label">
+                                    <span>Happy</span>
+                                    <span class="mood-percent" id="happy-percent">0%</span>
+                                </div>
+                                <div class="slider-container">
+                                    <input type="range" min="0" max="100" value="0" class="mood-slider" id="happy-slider" data-color="#8DCA35">
+                                    <div class="slider-track" id="happy-track"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mood-slider-item">
+                                <div class="mood-label">
+                                    <span>Sad</span>
+                                    <span class="mood-percent" id="sad-percent">0%</span>
+                                </div>
+                                <div class="slider-container">
+                                    <input type="range" min="0" max="100" value="0" class="mood-slider" id="sad-slider" data-color="#5B9BD5">
+                                    <div class="slider-track" id="sad-track"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mood-slider-item">
+                                <div class="mood-label">
+                                    <span>Anxious</span>
+                                    <span class="mood-percent" id="anxious-percent">0%</span>
+                                </div>
+                                <div class="slider-container">
+                                    <input type="range" min="0" max="100" value="0" class="mood-slider" id="anxious-slider" data-color="#FFD056">
+                                    <div class="slider-track" id="anxious-track"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mood-slider-item">
+                                <div class="mood-label">
+                                    <span>Calm</span>
+                                    <span class="mood-percent" id="calm-percent">0%</span>
+                                </div>
+                                <div class="slider-container">
+                                    <input type="range" min="0" max="100" value="0" class="mood-slider" id="calm-slider" data-color="#9F7BD5">
+                                    <div class="slider-track" id="calm-track"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mood-slider-item">
+                                <div class="mood-label">
+                                    <span>Energetic</span>
+                                    <span class="mood-percent" id="energetic-percent">0%</span>
+                                </div>
+                                <div class="slider-container">
+                                    <input type="range" min="0" max="100" value="0" class="mood-slider" id="energetic-slider" data-color="#F06292">
+                                    <div class="slider-track" id="energetic-track"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mood-slider-item">
+                                <div class="mood-label">
+                                    <span>Tired</span>
+                                    <span class="mood-percent" id="tired-percent">0%</span>
+                                </div>
+                                <div class="slider-container">
+                                    <input type="range" min="0" max="100" value="0" class="mood-slider" id="tired-slider" data-color="#78909C">
+                                    <div class="slider-track" id="tired-track"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mood-notes">
+                            <h3>Add Notes</h3>
+                            <textarea placeholder="What influenced your mood today? (optional)" id="mood-notes-input"></textarea>
+                        </div>
+                        
+                        <div class="mood-submit">
+                            <button id="save-mood" class="btn btn-primary">Save Mood Entry</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Mood Visualization Section -->
+                <section class="mood-visualization-section">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Your Mood History</h2>
+                            <div class="time-filter">
+                                <button class="filter-btn active" data-period="week">Week</button>
+                                <button class="filter-btn" data-period="month">Month</button>
+                                <button class="filter-btn" data-period="year">Year</button>
+                            </div>
+                        </div>
+                        
+                        <div class="mood-chart">
+                            <div class="chart-container" id="mood-chart-container">
+                                <!-- Chart will be inserted here via JavaScript -->
+                                <div class="mood-chart-placeholder">
+                                    <div class="mood-chart-day" data-day="Mon">
+                                        <div class="chart-bars">
+                                            <div class="chart-bar" style="height: 70%; background-color: #8DCA35;" title="Happy: 70%"></div>
+                                            <div class="chart-bar" style="height: 20%; background-color: #5B9BD5;" title="Sad: 20%"></div>
+                                            <div class="chart-bar" style="height: 40%; background-color: #FFD056;" title="Anxious: 40%"></div>
+                                            <div class="chart-bar" style="height: 60%; background-color: #9F7BD5;" title="Calm: 60%"></div>
+                                        </div>
+                                        <div class="chart-day-label">Mon</div>
+                                    </div>
+                                    <div class="mood-chart-day" data-day="Tue">
+                                        <div class="chart-bars">
+                                            <div class="chart-bar" style="height: 55%; background-color: #8DCA35;" title="Happy: 55%"></div>
+                                            <div class="chart-bar" style="height: 30%; background-color: #5B9BD5;" title="Sad: 30%"></div>
+                                            <div class="chart-bar" style="height: 50%; background-color: #FFD056;" title="Anxious: 50%"></div>
+                                            <div class="chart-bar" style="height: 40%; background-color: #9F7BD5;" title="Calm: 40%"></div>
+                                        </div>
+                                        <div class="chart-day-label">Tue</div>
+                                    </div>
+                                    <div class="mood-chart-day" data-day="Wed">
+                                        <div class="chart-bars">
+                                            <div class="chart-bar" style="height: 40%; background-color: #8DCA35;" title="Happy: 40%"></div>
+                                            <div class="chart-bar" style="height: 45%; background-color: #5B9BD5;" title="Sad: 45%"></div>
+                                            <div class="chart-bar" style="height: 60%; background-color: #FFD056;" title="Anxious: 60%"></div>
+                                            <div class="chart-bar" style="height: 35%; background-color: #9F7BD5;" title="Calm: 35%"></div>
+                                        </div>
+                                        <div class="chart-day-label">Wed</div>
+                                    </div>
+                                    <div class="mood-chart-day" data-day="Thu">
+                                        <div class="chart-bars">
+                                            <div class="chart-bar" style="height: 60%; background-color: #8DCA35;" title="Happy: 60%"></div>
+                                            <div class="chart-bar" style="height: 20%; background-color: #5B9BD5;" title="Sad: 20%"></div>
+                                            <div class="chart-bar" style="height: 30%; background-color: #FFD056;" title="Anxious: 30%"></div>
+                                            <div class="chart-bar" style="height: 70%; background-color: #9F7BD5;" title="Calm: 70%"></div>
+                                        </div>
+                                        <div class="chart-day-label">Thu</div>
+                                    </div>
+                                    <div class="mood-chart-day" data-day="Fri">
+                                        <div class="chart-bars">
+                                            <div class="chart-bar" style="height: 75%; background-color: #8DCA35;" title="Happy: 75%"></div>
+                                            <div class="chart-bar" style="height: 15%; background-color: #5B9BD5;" title="Sad: 15%"></div>
+                                            <div class="chart-bar" style="height: 20%; background-color: #FFD056;" title="Anxious: 20%"></div>
+                                            <div class="chart-bar" style="height: 65%; background-color: #9F7BD5;" title="Calm: 65%"></div>
+                                        </div>
+                                        <div class="chart-day-label">Fri</div>
+                                    </div>
+                                    <div class="mood-chart-day empty" data-day="Sat">
+                                        <div class="chart-bars">
+                                            <!-- Empty, no mood logged yet -->
+                                        </div>
+                                        <div class="chart-day-label">Sat</div>
+                                    </div>
+                                    <div class="mood-chart-day empty" data-day="Sun">
+                                        <div class="chart-bars">
+                                            <!-- Empty, no mood logged yet -->
+                                        </div>
+                                        <div class="chart-day-label">Sun</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-legend">
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #8DCA35;"></span>
+                                    <span class="legend-label">Happy</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #5B9BD5;"></span>
+                                    <span class="legend-label">Sad</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #FFD056;"></span>
+                                    <span class="legend-label">Anxious</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background-color: #9F7BD5;"></span>
+                                    <span class="legend-label">Calm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Mood Insights Section -->
+                <section class="mood-insights-section">
+                    <div class="card">
+                        <h2>Mood Insights</h2>
+                        <div class="insights-content">
+                            <div class="insight-card">
+                                <div class="insight-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                                        <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                                    </svg>
+                                </div>
+                                <div class="insight-content">
+                                    <h3>You're feeling calmer</h3>
+                                    <p>Your calm levels have increased by 20% compared to last week.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="insight-card">
+                                <div class="insight-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
+                                    </svg>
+                                </div>
+                                <div class="insight-content">
+                                    <h3>Morning meditation helps</h3>
+                                    <p>Days you meditate in the morning show 35% higher happiness levels.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="insight-card">
+                                <div class="insight-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6A4.997 4.997 0 0 1 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/>
+                                    </svg>
+                                </div>
+                                <div class="insight-content">
+                                    <h3>Pattern detected</h3>
+                                    <p>Your anxiety tends to peak on Wednesdays - consider scheduling a midweek relaxation session.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Mood Entries History Section -->
+                <section class="mood-history-section">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Recent Entries</h2>
+                            <button class="btn btn-secondary view-all-btn">View All</button>
+                        </div>
+                        
+                        <div class="mood-entries">
+                            <div class="mood-entry">
+                                <div class="entry-date">
+                                    <div class="day">24</div>
+                                    <div class="month">APR</div>
+                                </div>
+                                <div class="entry-content">
+                                    <div class="entry-moods">
+                                        <div class="entry-mood-dot" style="background-color: #8DCA35;" title="Happy: 60%"></div>
+                                        <div class="entry-mood-dot" style="background-color: #5B9BD5;" title="Sad: 20%"></div>
+                                        <div class="entry-mood-dot" style="background-color: #FFD056;" title="Anxious: 30%"></div>
+                                        <div class="entry-mood-dot" style="background-color: #9F7BD5;" title="Calm: 70%"></div>
+                                    </div>
+                                    <div class="entry-note">Had a productive morning meeting and completed a challenging project. Evening meditation helped me relax.</div>
+                                    <div class="entry-time">10:30 AM</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mood-entry">
+                                <div class="entry-date">
+                                    <div class="day">23</div>
+                                    <div class="month">APR</div>
+                                </div>
+                                <div class="entry-content">
+                                    <div class="entry-moods">
+                                        <div class="entry-mood-dot" style="background-color: #8DCA35;" title="Happy: 40%"></div>
+                                        <div class="entry-mood-dot" style="background-color: #5B9BD5;" title="Sad: 45%"></div>
+                                        <div class="entry-mood-dot" style="background-color: #FFD056;" title="Anxious: 60%"></div>
+                                        <div class="entry-mood-dot" style="background-color: #9F7BD5;" title="Calm: 35%"></div>
+                                    </div>
+                                    <div class="entry-note">Feeling stressed about upcoming deadline. Need to make time for relaxation exercises.</div>
+                                    <div class="entry-time">8:15 PM</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mood-entry">
+                                <div class="entry-date">
+                                    <div class="day">22</div>
+                                    <div class="month">APR</div>
+                                </div>
+                                <div class="entry-content">
+                                    <div class="entry-moods">
+                                        <div class="entry-mood-dot" style="background-color: #8DCA35;" title="Happy: 75%"></div>
+                                        <div class="entry-mood-dot" style="background-color: #5B9BD5;" title="Sad: 15%"></div>
+                                        <div class="entry-mood-dot" style="background-color: #FFD056;" title="Anxious: 20%"></div>
+                                        <div class="entry-mood-dot" style="background-color: #9F7BD5;" title="Calm: 65%"></div>
+                                    </div>
+                                    <div class="entry-note">Great day! Morning yoga and a walk in the park really helped boost my mood.</div>
+                                    <div class="entry-time">5:45 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recommendations Section -->
+                <section class="mood-recommendations-section">
+                    <div class="card">
+                        <h2>Recommended For You</h2>
+                        <p class="section-desc">Based on your recent mood patterns, these resources might help:</p>
+                        
+                        <div class="recommendations-grid">
+                            <div class="recommendation-card">
+                                <div class="recommendation-icon" style="background-color: var(--color-yellow);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-6h10v2H7zm0-4h10v2H7z"/>
+                                    </svg>
+                                </div>
+                                <div class="recommendation-content">
+                                    <h3>Midweek Calm</h3>
+                                    <p>A 15-minute guided meditation designed to reduce midweek anxiety.</p>
+                                    <a href="#" class="btn btn-secondary">Start Session</a>
+                                </div>
+                            </div>
+                            
+                            <div class="recommendation-card">
+                                <div class="recommendation-icon" style="background-color: var(--color-pink);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21 12.22C21 6.73 16.74 3 12 3c-4.69 0-9 3.65-9 9.28-.6.23-.06.46-.06.7.05 4.3 4.11 9.02 7.22 9.02 2.78 0 3.41-1.55 3.84-1.55.43 0 1.06 1.55 3.84 1.55 3.11 0 7.17-4.73 7.16-9.02 0-.25 0-.47-.06-.7 0-.01.06-.01.06-.03zm-18 1.33v-.1c0-5.05 3.87-8.45 9-8.45 5.19 0 9 3.5 9 8.55 0 4.54-3.55 8.06-6.16 8.06-1.5 0-1.73-.54-3.84-.54s-2.34.54-3.84.54c-2.61 0-6.16-3.52-6.16-8.06zM8 11.54c.92 0 1.67-.75 1.67-1.67 0-.92-.75-1.67-1.67-1.67-.92 0-1.67.75-1.67 1.67 0 .92.75 1.67 1.67 1.67zm8 0c.92 0 1.67-.75 1.67-1.67 0-.92-.75-1.67-1.67-1.67-.92 0-1.67.75-1.67 1.67 0 .92.75 1.67 1.67 1.67z"/>
+                                    </svg>
+                                </div>
+                                <div class="recommendation-content">
+                                    <h3>Journal Prompt</h3>
+                                    <p>Write about a time when you successfully managed anxiety and what techniques worked.</p>
+                                    <a href="#" class="btn btn-secondary">Open Journal</a>
+                                </div>
+                            </div>
+                            
+                            <div class="recommendation-card">
+                                <div class="recommendation-icon" style="background-color: var(--color-orange);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                                    </svg>
+                                </div>
+                                <div class="recommendation-content">
+                                    <h3>Community Topic</h3>
+                                    <p>Join the discussion on "Managing Work Stress" in our community forum.</p>
+                                    <a href="#" class="btn btn-secondary">View Discussion</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="main-footer">
+                <div class="copyright">&copy; 2025 Mindful Moments. All rights reserved.</div>
+                <div class="emergency-support">
+                    <a href="#" class="emergency-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                        </svg>
+                        Emergency Support Hotlines
+                    </a>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/dashboard-js.js"></script>
+    <script src="js/mood-tracker-js.js"></script>
+    
+    </body>
+</html>

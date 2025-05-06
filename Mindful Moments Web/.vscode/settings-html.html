@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Moments - Settings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main-css.css">
+    <link rel="stylesheet" href="css/settings-css.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12,2C6.48,2,2,6.48,2,12c0,5.52,4.48,10,10,10s10-4.48,10-10C22,6.48,17.52,2,12,2z M12,18c-3.31,0-6-2.69-6-6 s2.69-6,6-6s6,2.69,6,6S15.31,18,12,18z"/>
+                        <path d="M12,8c-2.21,0-4,1.79-4,4c0,2.21,1.79,4,4,4s4-1.79,4-4C16,9.79,14.21,8,12,8z M12,14c-1.1,0-2-0.9-2-2 c0-1.1,0.9-2,2-2s2,0.9,2,2C14,13.1,13.1,14,12,14z"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Mindful Moments</span>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="dashboard-html.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-5-6h10v2H7zm0-4h10v2H7z"/>
+                    </svg>
+                    <span>Sessions</span>
+                </a>
+                <a href="mood-tracker-html.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
+                    </svg>
+                    <span>Mood Tracker</span>
+                </a>
+                <a href="journal-html.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                    </svg>
+                    <span>Journal</span>
+                </a>
+                <a href="community-html.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    </svg>
+                    <span>Community</span>
+                </a>
+                <a href="#" class="nav-item emergency-help">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                    </svg>
+                    <span>Emergency Support</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <a href="settings-html.html" class="settings-link active">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+                    </svg>
+                    <span>Settings</span>
+                </a>
+                <a href="welcome-page.html" class="logout-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/>
+                    </svg>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="mobile-menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </div>
+                <div class="page-title">Settings</div>
+                <div class="user-menu">
+                    <div class="notifications">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+                        </svg>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="user-profile">
+                        <div class="avatar">JS</div>
+                        <span class="user-name">John Smith</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M7 10l5 5 5-5z"/>
+                        </svg>
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-content settings-content">
+                <div class="page-header">
+                    <h1>Account Settings</h1>
+                    <p class="page-subheading">Manage your account preferences and personal information</p>
+                </div>
+
+                <div class="settings-container">
+                    <!-- Settings Navigation -->
+                    <div class="settings-sidebar">
+                        <div class="settings-nav">
+                            <div class="settings-nav-item active" data-section="profile">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                </svg>
+                                <span>Profile</span>
+                            </div>
+                            <div class="settings-nav-item" data-section="account">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                                </svg>
+                                <span>Account</span>
+                            </div>
+                            <div class="settings-nav-item" data-section="notifications">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+                                </svg>
+                                <span>Notifications</span>
+                            </div>
+                            <div class="settings-nav-item" data-section="preferences">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/>
+                                </svg>
+                                <span>Preferences</span>
+                            </div>
+                            <div class="settings-nav-item" data-section="privacy">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                                </svg>
+                                <span>Privacy</span>
+                            </div>
+                            <div class="settings-nav-item" data-section="billing">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
+                                </svg>
+                                <span>Billing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="danger-zone">
+                            <h3>Danger Zone</h3>
+                            <p>Actions performed here cannot be undone. Please proceed with caution.</p>
+                            <button class="btn btn-danger" id="delete-account-btn">Delete Account</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Settings Main Content -->
+                    <div class="settings-main">
+                        <!-- Profile Section -->
+                        <div class="settings-section active" id="profile-section">
+                            <h2 class="settings-section-title">Profile Information</h2>
+                            <p class="settings-section-desc">Update your personal information and how others see you in the community</p>
+                            
+                            <form id="profile-form">
+                                <div class="avatar-upload">
+                                    <div class="avatar-preview">
+                                        <div id="avatar-initials">JS</div>
+                                        <div class="avatar-edit">
+                                            <label for="avatar-input">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                                                </svg>
+                                            </label>
+                                            <input type="file" id="avatar-input" accept="image/*">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="first-name">First Name</label>
+                                        <input type="text" id="first-name" class="form-input" value="John">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="last-name">Last Name</label>
+                                        <input type="text" id="last-name" class="form-input" value="Smith">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="display-name">Display Name (Community)</label>
+                                    <input type="text" id="display-name" class="form-input" value="JohnS">
+                                    <p class="form-help">This is how you'll appear to other users in the community section</p>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="bio">About Me</label>
+                                    <textarea id="bio" class="form-input">Meditation enthusiast and mindfulness practitioner. I enjoy nature walks and journaling.</textarea>
+                                    <p class="form-help">A short bio to introduce yourself to the community (Optional)</p>
+                                </div>
+                                
+                                <div class="settings-divider"></div>
+                                
+                                <h3 class="settings-section-title">Contact Information</h3>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email Address</label>
+                                    <input type="email" id="email" class="form-input" value="john.smith@example.com">
+                                </div>
+                                
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-secondary" id="cancel-profile-btn">Cancel</button>
+                                    <button type="submit" class="btn btn-primary" id="save-profile-btn">Save Changes</button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <!-- Account Section -->
+                        <div class="settings-section" id="account-section">
+                            <h2 class="settings-section-title">Account Security</h2>
+                            <p class="settings-section-desc">Manage your password and account security settings</p>
+                            
+                            <form id="password-form">
+                                <div class="form-group">
+                                    <label class="form-label" for="current-password">Current Password</label>
+                                    <input type="password" id="current-password" class="form-input">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="new-password">New Password</label>
+                                    <input type="password" id="new-password" class="form-input">
+                                    <p class="form-help">Password must be at least 8 characters long and include a mix of letters, numbers, and symbols</p>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="confirm-password">Confirm New Password</label>
+                                    <input type="password" id="confirm-password" class="form-input">
+                                </div>
+                                
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-secondary" id="cancel-password-btn">Cancel</button>
+                                    <button type="submit" class="btn btn-primary" id="save-password-btn">Update Password</button>
+                                </div>
+                            </form>
+                            
+                            <div class="settings-divider"></div>
+                            
+                            <h3 class="settings-section-title">Connected Devices</h3>
+                            <p class="settings-section-desc">Manage devices that are currently logged into your account</p>
+                            
+                            <div class="device-list">
+                                <div class="device-item">
+                                    <div class="device-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="device-info">
+                                        <div class="device-name">Windows PC (Current Device)</div>
+                                        <div class="device-meta">Last active: Just now • Chrome Browser</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="device-item">
+                                    <div class="device-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="device-info">
+                                        <div class="device-name">iPhone 13</div>
+                                        <div class="device-meta">Last active: 2 hours ago • Safari Browser</div>
+                                    </div>
+                                    <div class="device-actions">
+                                        <button class="device-action logout">Log Out</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Notifications Section -->
+                        <div class="settings-section" id="notifications-section">
+                            <h2 class="settings-section-title">Notification Settings</h2>
+                            <p class="settings-section-desc">Control how and when you receive notifications</p>
+                            
+                            <div class="switch-container">
+                                <span class="switch-label">Email Notifications</span>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            
+                            <div class="switch-container">
+                                <span class="switch-label">Push Notifications</span>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            
+                            <div class="settings-divider"></div>
+                            
+                            <h3 class="settings-section-title">Notification Types</h3>
+                            
+                            <div class="form-group">
+                                <p class="form-label">Meditation Reminders</p>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="reminder-daily" checked>
+                                    <label for="reminder-daily">Daily meditation reminders</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="reminder-missed" checked>
+                                    <label for="reminder-missed">Missed practice reminders</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <p class="form-label">Community Notifications</p>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="notif-replies" checked>
+                                    <label for="notif-replies">Replies to your posts</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="notif-likes">
+                                    <label for="notif-likes">Likes on your posts</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="notif-mentions" checked>
+                                    <label for="notif-mentions">Mentions in the community</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <p class="form-label">System Notifications</p>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="notif-updates" checked>
+                                    <label for="notif-updates">App updates and new features</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="notif-new-content" checked>
+                                    <label for="notif-new-content">New meditation content</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary" id="cancel-notifications-btn">Cancel</button>
+                                <button type="button" class="btn btn-primary" id="save-notifications-btn">Save Changes</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Preferences Section -->
+                        <div class="settings-section" id="preferences-section">
+                            <h2 class="settings-section-title">App Preferences</h2>
+                            <p class="settings-section-desc">Customize your app experience and interface</p>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Theme</label>
+                                <div class="theme-options">
+                                    <div class="theme-option active" data-theme="light">
+                                        <div class="theme-preview">
+                                            <div class="theme-header" style="background-color: #fff"></div>
+                                            <div class="theme-sidebar" style="background-color: #6a0d83"></div>
+                                            <div class="theme-content" style="background-color: #f9f9f9"></div>
+                                        </div>
+                                        <div class="theme-name">Light</div>
+                                    </div>
+                                    
+                                    <div class="theme-option" data-theme="dark">
+                                        <div class="theme-preview">
+                                            <div class="theme-header" style="background-color: #222"></div>
+                                            <div class="theme-sidebar" style="background-color: #111"></div>
+                                            <div class="theme-content" style="background-color: #333"></div>
+                                        </div>
+                                        <div class="theme-name">Dark</div>
+                                    </div>
+                                    
+                                    <div class="theme-option" data-theme="calm">
+                                        <div class="theme-preview">
+                                            <div class="theme-header" style="background-color: #e0f2f1"></div>
+                                            <div class="theme-sidebar" style="background-color: #004d40"></div>
+                                            <div class="theme-content" style="background-color: #f1f8e9"></div>
+                                        </div>
+                                        <div class="theme-name">Calm</div>
+                                    </div>
+                                    
+                                    <div class="theme-option" data-theme="sunset">
+                                        <div class="theme-preview">
+                                            <div class="theme-header" style="background-color: #fff8e1"></div>
+                                            <div class="theme-sidebar" style="background-color: #ff5722"></div>
+                                            <div class="theme-content" style="background-color: #fff3e0"></div>
+                                        </div>
+                                        <div class="theme-name">Sunset</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="settings-divider"></div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Meditation Preferences</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="meditation-duration" value="short" checked>
+                                        Short (5-10 minutes)
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="meditation-duration" value="medium">
+                                        Medium (15-20 minutes)
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="meditation-duration" value="long">
+                                        Long (30+ minutes)
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Background Sound</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="background-sound" value="none">
+                                        None
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="background-sound" value="nature" checked>
+                                        Nature Sounds
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="background-sound" value="ambient">
+                                        Ambient
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="background-sound" value="white-noise">
+                                        White Noise
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Language</label>
+                                <select class="form-input">
+                                    <option value="en" selected>English</option>
+                                    <option value="es">Español</option>
+                                    <option value="fr">Français</option>
+                                    <option value="de">Deutsch</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary" id="cancel-preferences-btn">Cancel</button>
+                                <button type="button" class="btn btn-primary" id="save-preferences-btn">Save Changes</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Privacy Section -->
+                        <div class="settings-section" id="privacy-section">
+                            <h2 class="settings-section-title">Privacy Settings</h2>
+                            <p class="settings-section-desc">Control your privacy and data sharing preferences</p>
+                            
+                            <div class="switch-container">
+                                <span class="switch-label">Community Profile Visibility</span>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <p class="form-help">Allow other members to see your profile in the community</p>
+                            
+                            <div class="switch-container">
+                                <span class="switch-label">Anonymous Posting</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <p class="form-help">Post anonymously in community discussions</p>
+                            
+                            <div class="settings-divider"></div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Data Collection & Usage</label>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="data-analytics" checked>
+                                    <label for="data-analytics">Allow anonymous usage data collection to improve app features</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="data-personalization" checked>
+                                    <label for="data-personalization">Use my activity to personalize recommendations</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="button" class="btn" id="download-data-btn">Download My Data</button>
+                                <button type="button" class="btn btn-primary" id="save-privacy-btn">Save Changes</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Billing Section -->
+                        <div class="settings-section" id="billing-section">
+                            <h2 class="settings-section-title">Subscription & Billing</h2>
+                            <p class="settings-section-desc">Manage your subscription plan and payment methods</p>
+                            
+                            <div class="plan-box">
+                                <div class="plan-header">
+                                    <div class="plan-name">Free Plan</div>
+                                    <div class="plan-price">$0/month</div>
+                                </div>
+                                <div class="plan-details">
+                                    <div class="plan-feature">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                        </svg>
+                                        <span>Basic guided meditations</span>
+                                    </div>
+                                    <div class="plan-feature">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                        </svg>
+                                        <span>Mood tracking</span>
+                                    </div>
+                                    <div class="plan-feature">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                        </svg>
+                                        <span>Community forum access</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary">Upgrade to Premium</button>
+                            </div>
+                            
+                            <table class="plan-table">
+                                <thead>
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>Free</th>
+                                        <th>Premium ($9.99/mo)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Guided Meditations</td>
+                                        <td>Basic</td>
+                                        <td>All meditations</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ad-Free Experience</td>
+                                        <td>-</td>
+                                        <td class="plan-check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Advanced Analytics</td>
+                                        <td>-</td>
+                                        <td class="plan-check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Offline Downloads</td>
+                                        <td>-</td>
+                                        <td class="plan-check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Custom Meditation Playlists</td>
+                                        <td>-</td>
+                                        <td class="plan-check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="main-footer">
+                <div class="copyright">&copy; 2025 Mindful Moments. All rights reserved.</div>
+                <div class="emergency-support">
+                    <a href="#" class="emergency-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                        </svg>
+                        Emergency Support Hotlines
+                    </a>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/dashboard-js.js"></script>
+    <script src="js/settings-js.js"></script>
+</body>
+</html>

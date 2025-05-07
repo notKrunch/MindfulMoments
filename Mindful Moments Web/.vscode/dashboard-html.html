@@ -392,51 +392,12 @@
     <script src="js/dashboard-js.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const user = localStorage.getItem('currentUser');
+            // Load dashboard data
+            loadDashboardData();
             
-            try {
-                if (user) {
-                    const userData = JSON.parse(user);
-                    // Update user info
-                    updateUserInfo(userData);
-                }
-                
-                // Load dashboard data
-                loadDashboardData();
-                
-                // Initialize notifications
-                initNotifications();
-                
-            } catch (error) {
-                console.error('Error initializing dashboard:', error);
-            }
+            // Initialize notifications
+            initNotifications();
         });
-
-        // Update user information
-        function updateUserInfo(userData) {
-            // Update greeting
-            const greeting = document.querySelector('.greeting');
-            if (greeting) {
-                greeting.textContent = `Good ${getTimeOfDay()}, ${userData.name}!`;
-            }
-            
-            // Update user name and avatar
-            const userName = document.querySelector('.user-name');
-            const userAvatar = document.querySelector('#userAvatar');
-            if (userName) {
-                userName.textContent = userData.name;
-            }
-            if (userAvatar && userData.name) {
-                userAvatar.textContent = userData.name.split(' ').map(n => n.charAt(0)).join('');
-            }
-
-            // Update current date
-            const currentDate = document.querySelector('#currentDate');
-            if (currentDate) {
-                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                currentDate.textContent = new Date().toLocaleDateString('en-US', options);
-            }
-        }
 
         // Load dashboard data
         function loadDashboardData() {

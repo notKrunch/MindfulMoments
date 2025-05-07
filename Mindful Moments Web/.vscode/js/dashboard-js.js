@@ -1,23 +1,14 @@
-import auth from './auth.js';
-
 document.addEventListener('DOMContentLoaded', function() {
-    const user = auth.getCurrentUser();
-    
     // Initialize dashboard components
     initDashboard();
     
     // Add event listeners
     addEventListeners();
 
-    // Update UI with user information if available
-    if (user) {
-        updateUserInfo(user);
-    } else {
-        // Set default values for unauthenticated users
-        const welcomeMessage = document.querySelector('.welcome-message');
-        if (welcomeMessage) {
-            welcomeMessage.textContent = 'Welcome to Mindful Moments!';
-        }
+    // Set default welcome message
+    const welcomeMessage = document.querySelector('.welcome-message');
+    if (welcomeMessage) {
+        welcomeMessage.textContent = 'Welcome to Mindful Moments!';
     }
 });
 

@@ -392,19 +392,14 @@
     <script src="js/dashboard-js.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Authentication will be handled by the real database
             const user = localStorage.getItem('currentUser');
             
-            if (!user) {
-                window.location.href = 'login-page.html';
-                return;
-            }
-            
             try {
-                const userData = JSON.parse(user);
-                
-                // Update user info
-                updateUserInfo(userData);
+                if (user) {
+                    const userData = JSON.parse(user);
+                    // Update user info
+                    updateUserInfo(userData);
+                }
                 
                 // Load dashboard data
                 loadDashboardData();
@@ -414,7 +409,6 @@
                 
             } catch (error) {
                 console.error('Error initializing dashboard:', error);
-                window.location.href = 'login-page.html';
             }
         });
 
